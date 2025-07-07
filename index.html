@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dark Run: Medieval Quest</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="menu">
+    <h1>⚔️ Dark Run: Medieval Quest ⚔️</h1>
+    <button id="startBtn">START GAME</button>
+  </div>
+  <canvas id="gameCanvas" width="1000" height="600"></canvas>
+  <div id="gameOverScreen" style="display:none;">
+    <h2>💀 GAME OVER 💀</h2>
+    <p id="finalScore"></p>
+    <button id="restartBtn">RESTART</button>
+  </div>
+  <div id="winScreen" style="display:none;">
+    <h2>🏆 VICTORY! 🏆</h2>
+    <p id="winScore"></p>
+    <button id="restartWinBtn">PLAY AGAIN</button>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
