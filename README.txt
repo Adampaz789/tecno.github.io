@@ -1,1 +1,0 @@
-Aquí puedes poner tus sprites y sonidos medievales.
