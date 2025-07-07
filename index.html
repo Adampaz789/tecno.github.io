@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dark Run: The Knight's Quest</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="menu">
+    <h1>⚔️ Dark Run: The Knight's Quest ⚔️</h1>
+    <p class="pulse">Press Start</p>
+    <button id="startBtn">START GAME</button>
+  </div>
+
+  <canvas id="gameCanvas" width="1000" height="600"></canvas>
+
+  <div id="transitionScreen" style="display:none;">
+    <h2 id="transitionText">Level Completed!</h2>
+    <button id="nextLevelBtn">NEXT LEVEL</button>
+  </div>
+
+  <div id="shopScreen" style="display:none;">
+    <h2>🏰 Village Shop 🏰</h2>
+    <p>Spend your runes wisely!</p>
+    <button id="buyLifeBtn">+1 Life (Cost: 50 runes)</button>
+    <button id="buyShieldBtn">Stronger Shield (Cost: 75 runes)</button>
+    <button id="buySwordBtn">Magic Sword (Cost: 100 runes)</button>
+    <button id="continueBtn">Continue Quest</button>
+  </div>
+
+  <div id="gameOverScreen" style="display:none;">
+    <h2>💀 YOU HAVE FALLEN 💀</h2>
+    <p id="finalScore"></p>
+    <button id="restartBtn">TRY AGAIN</button>
+  </div>
+
+  <div id="winScreen" style="display:none;">
+    <h2>🏆 VICTORY! 🏆</h2>
+    <p>You saved the kingdom!</p>
+    <p id="winScore"></p>
+    <button id="restartWinBtn">PLAY AGAIN</button>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
